@@ -16,7 +16,9 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
+      "@components": ["./src/components/index"],
       "@pages": ["./src/pages/index"],
+      "@utils": ["./src/utils/index"],
       "@test-confing": ["./src/consts/tests.config"],
       "@tests/*": ["./tests/*"]
     }
