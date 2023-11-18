@@ -1,0 +1,16 @@
+{
+  "printWidth": 120,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "singleQuote": true,
+  "endOfLine": "lf",
+  "overrides": [
+    {
+      "files": ["src/pages/**/*.ts", "src/components/**/*.ts"],
+      "options": {
+        "printWidth": 200
+      }
+    }
+  ]
+}

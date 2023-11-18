@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "codegen": "playwright codegen demo.playwright.dev/todomvc"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.40.0",
-    "@types/node": "^20.9.1"
+    "@types/node": "^20.9.1",
+    "eslint": "^8.54.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.10"
   }
 }

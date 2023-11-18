@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "jsx": "react",
+    "sourceMap": true,
+    "outDir": "./",
+    "rootDir": "./",
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@pages": ["./src/pages/index"],
+      "@test-confing": ["./src/consts/tests.config"],
+      "@tests/*": ["./tests/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "compileOnSave": false
+}
