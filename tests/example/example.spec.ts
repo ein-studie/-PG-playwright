@@ -29,6 +29,8 @@ test('snapshot', async ({ page }, testInfo) => {
   });
 });
 
-test('toHaveScreenshot', async ({ page }) => {
+test('toHaveScreenshot__@fail', async ({ page }) => {
+  test.fail();
+
   await expect(page).toHaveScreenshot();
 });
