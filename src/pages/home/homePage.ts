@@ -1,16 +1,11 @@
 import { Page } from '@playwright/test';
-import { PageObject } from '../PageObject';
+import { PageObject } from '@pageObject';
 
 export class HomePage implements PageObject {
-  /** ページタイトル */
-  readonly page: Page;
   /** URL */
-  readonly url: string;
+  readonly url = '/';
 
-  constructor(page: Page) {
-    this.page = page;
-    this.url = '/';
-  }
+  constructor(public readonly page: Page) {}
 
   /** ページタイトル */
   readonly title = () => this.page.getByRole('heading', { name: 'todos' });

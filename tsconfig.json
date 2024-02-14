@@ -17,7 +17,9 @@
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@components": ["./src/components/index"],
+      "@componentObject": ["./src/components/componentObject.d"],
       "@pages": ["./src/pages/index"],
+      "@pageObject": ["./src/pages/pageObject.d"],
       "@utils": ["./src/utils/index"],
       "@test-confing": ["./src/consts/tests.config"],
       "@tests/*": ["./tests/*"]

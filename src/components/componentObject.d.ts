@@ -1,11 +1,11 @@
 import type { Page, Locator } from '@playwright/test';
 
-export interface PageObject {
+export interface ComponentObject {
   /** ページオブジェクト */
   readonly page: Page;
-  /** URL */
-  readonly url: string;
 
+  /** コンポーネント全体 */
+  readonly body: () => Locator;
   /** ページタイトル */
   readonly title?: () => Locator;
 }
