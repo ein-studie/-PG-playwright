@@ -22,6 +22,7 @@
       "@pageObject": ["./src/pages/pageObject.d"],
       "@utils": ["./src/utils/index"],
       "@test-confing": ["./src/consts/tests.config"],
+      "@test-confing-type": ["./src/consts/tests.config.d"],
       "@tests/*": ["./tests/*"]
     }
   },

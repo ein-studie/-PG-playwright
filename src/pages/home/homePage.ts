@@ -1,6 +1,9 @@
 import { Page } from '@playwright/test';
 import { PageObject } from '@pageObject';
 
+/**
+ * 【pages】HomePage
+ */
 export class HomePage implements PageObject {
   /** URL */
   readonly url = '/';

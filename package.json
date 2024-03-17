@@ -6,6 +6,11 @@
   "scripts": {
     "test": "playwright test",
     "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "dev": "npm run dev:start && npm run dev:bash",
+    "dev:start": "docker-compose up -d",
+    "dev:bash": "docker-compose exec playwright bash",
+    "dev:ui": "playwright test --ui-port=8080 --ui-host=0.0.0.0",
     "codegen": "playwright codegen demo.playwright.dev/todomvc"
   },
   "keywords": [],
@@ -14,10 +19,16 @@
   "devDependencies": {
     "@playwright/test": "^1.41.2",
     "@types/node": "^20.9.1",
-    "eslint": "^8.54.0",
-    "typescript": "^5.2.2"
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "eslint": "^8.57.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^5.4.2"
   },
   "dependencies": {
+    "csv": "^6.3.8",
     "dayjs": "^1.11.10"
   }
 }

@@ -40,6 +40,8 @@ export default defineConfig({
     video: 'on',
   },
   outputDir: './dist/playwright/results',
+  globalSetup: require.resolve('./tests/global-setup'),
+  globalTeardown: require.resolve('./tests/global-teardown'),
 
   /* Configure projects for major browsers */
   projects: [
